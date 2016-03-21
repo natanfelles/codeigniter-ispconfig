@@ -1,0 +1,84 @@
+body {
+	font-family: 'Arial', Helvetica, sans-serif;
+	font-size: 14px;
+	background: #fff;
+	color: #666;
+	margin: 0;
+}
+
+.container {
+	margin: 5px auto;
+	width: 800px;
+}
+
+.logo {
+	background: url("ispconfig.png") no-repeat;
+	width: 220px;
+	height: 78px;
+	float: left;
+}
+
+.pages {
+	float: left;
+	width: 580px;
+	height: 78px;
+	text-align: right;
+}
+
+.pages ul {
+	padding-top: 18px;
+}
+
+.pages ul li {
+	list-style: none;
+	display: inline;
+}
+
+.pages ul li a {
+	text-decoration: none;
+	color: #666;
+	border: 1px solid #d5d5d5;
+	background: #f5f5f5;
+	padding: 5px 12px;
+	margin-left: 5px;
+}
+
+.pages ul li a:hover {
+	background: #e5e5e5;
+}
+
+.response {
+	float: left;
+	padding: 12px;
+	width: 774px;
+	border: 1px solid #d5d5d5;
+	background: #f5f5f5;
+}
+
+.response h2 {
+	margin: 0;
+}
+
+.response pre {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 12px;
+	color: #222;
+	margin: 25px 0 25px 10px;
+	overflow: auto;
+}
+
+.bottom {
+	float: left;
+	width: 100%;
+	text-align: right;
+	margin: 18px 0 50px 0;
+}
+
+.bottom a {
+	text-decoration: none;
+	color: #666;
+}
+
+.bottom a:hover {
+	color: #cc141b;
+}
