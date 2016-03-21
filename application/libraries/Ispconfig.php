@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @category      Remote API
  * @version       1.0.0
  * @author        Natan Felles
- * @link          http://github.com/natanfelles/codeigniter/ispconfig
+ * @link          http://github.com/natanfelles/codeigniter-ispconfig
  */
 class Ispconfig {
 
