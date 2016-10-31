@@ -1,13 +1,14 @@
 body {
-	font-family: 'Arial', Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	background: #fff;
-	color: #666;
+	background: #f2f5f7;
+	color: #3c444b;
 	margin: 0;
+	line-height: 1.42857143;
 }
 
 .container {
-	margin: 5px auto;
+	margin: 15px auto;
 	width: 800px;
 }
 
@@ -26,7 +27,8 @@ body {
 }
 
 .pages ul {
-	padding-top: 18px;
+	padding-top: 5px;
+	float: right;
 }
 
 .pages ul li {
@@ -36,23 +38,46 @@ body {
 
 .pages ul li a {
 	text-decoration: none;
-	color: #666;
-	border: 1px solid #d5d5d5;
-	background: #f5f5f5;
+	color: #333;
+	border: 1px solid #ccc;
+	border-right-width: 0;
+	background: linear-gradient(to bottom, #fff, #eef0f2);
 	padding: 5px 12px;
-	margin-left: 5px;
+	margin-left: 0;
+	float: left;
 }
 
-.pages ul li a:hover {
-	background: #e5e5e5;
+.pages ul li:first-child a {
+	border-radius: 4px 0 0 4px;
+}
+
+.pages ul li:last-child a {
+	border-radius: 0 4px 4px 0;
+	border-right-width: 1px;
+}
+
+.pages ul li a:hover,
+.pages ul li a:focus,
+.pages ul li.active a {
+	background: linear-gradient(to bottom, #fafafa, #e8ebee);
+	border-bottom-color: #adadad;
+	color: #c70f19;
+	transition: all ease 500ms;
+}
+
+.pages ul li a:focus,
+.pages ul li.active a {
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	border-color: #adadad;
 }
 
 .response {
 	float: left;
 	padding: 12px;
 	width: 774px;
-	border: 1px solid #d5d5d5;
-	background: #f5f5f5;
+	border: 1px solid #d3d7da;
+	background: #fff;
+	border-radius: 4px;
 }
 
 .response h2 {
@@ -76,9 +101,9 @@ body {
 
 .bottom a {
 	text-decoration: none;
-	color: #666;
+	color: #3c444b;
 }
 
 .bottom a:hover {
-	color: #cc141b;
+	color: #c70f19;
 }

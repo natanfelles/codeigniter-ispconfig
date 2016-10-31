@@ -1,18 +1,21 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
 /**
- * Remote API Class
- * This class is an example using ISPConfig 3 Remote API
- *
  * @package       CodeIgniter
  * @subpackage    ISPConfig
  * @category      Remote API
- * @version       1.0.0
+ * @version       2.0.0
  * @author        Natan Felles
  * @link          http://github.com/natanfelles/codeigniter-ispconfig
  */
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/**
+ * Class Remote_api
+ *
+ * This class is an example using ISPConfig 3 Remote API
+ */
 class Remote_api extends CI_Controller {
+
 
 	public function __construct()
 	{
@@ -21,14 +24,16 @@ class Remote_api extends CI_Controller {
 		$this->load->library('ispconfig');
 	}
 
+
 	/**
 	 * Do your tests here
 	 */
 	public function index()
 	{
-		$data['response'] = $this->ispconfig->client_get(1);
+		$data['response'] = $this->ispconfig_client->get(1);
 		$this->load->view('ispconfig/remote_api', $data);
 	}
+
 
 	public function config()
 	{
@@ -36,9 +41,12 @@ class Remote_api extends CI_Controller {
 		$this->load->view('ispconfig/remote_api', $data);
 	}
 
+
 	public function function_list()
 	{
+
 		$data['response'] = $this->ispconfig->get_function_list();
 		$this->load->view('ispconfig/remote_api', $data);
 	}
+
 }
