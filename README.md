@@ -14,11 +14,3 @@ This files enables you to use the ISPConfig 3 Remote API with the CodeIgniter Fr
 ### Issues
 
 Report all bugs and suggestions
-
-# Hey! Wait a minute
-
-I am available for freelance.
-
-Working daily with web development and server administration.
-
-Send a message describing your project to natanfelles@gmail.com and we will make it happen!
