@@ -1,6 +1,6 @@
-# ISPConfig 3 Remote API to CodeIgniter
+# ISPConfig 3.1 Remote API to CodeIgniter
 
-This files enables you to use the ISPConfig 3 Remote API with the CodeIgniter Framework
+This files enables you to use the ISPConfig 3.1 Remote API with the CodeIgniter Framework
 
 ### How to use:
 1. Put all files inside your project folder.
