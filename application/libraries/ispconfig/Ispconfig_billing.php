@@ -1389,6 +1389,7 @@ class Ispconfig_billing extends Ispconfig {
 		{
 			$this->login();
 			$params = array(
+				'client_id'                => $client_id,
 				'invoice_item_template_id' => isset($invoice_recurring_item['invoice_item_template_id']) ? $invoice_recurring_item['invoice_item_template_id'] : 0,
 				'invoice_company_id'       => isset($invoice_recurring_item['invoice_company_id']) ? $invoice_recurring_item['invoice_company_id'] : 0,
 				'parent_recurring_item_id' => isset($invoice_recurring_item['parent_recurring_item_id']) ? $invoice_recurring_item['parent_recurring_item_id'] : 0,
@@ -1398,7 +1399,7 @@ class Ispconfig_billing extends Ispconfig {
 				'quantity'                 => isset($invoice_recurring_item['quantity']) ? $invoice_recurring_item['quantity'] : 1,
 				'price'                    => isset($invoice_recurring_item['price']) ? $invoice_recurring_item['price'] : 0,
 				'setup_fee'                => isset($invoice_recurring_item['setup_fee']) ? $invoice_recurring_item['setup_fee'] : 0,
-				'vat'                      => isset($invoice_recurring_item['vat']) ? $invoice_recurring_item['vat'] : 0,
+				'invoice_vat_rate_id'      => isset($invoice_recurring_item['vat']) ? $invoice_recurring_item['vat'] : 0,
 				'recur_months'             => isset($invoice_recurring_item['recur_months']) ? $invoice_recurring_item['recur_months'] : 0,
 				'next_payment_date'        => isset($invoice_recurring_item['next_payment_date']) ? $invoice_recurring_item['next_payment_date'] : date('Y-m-d'),
 				'start_date'               => isset($invoice_recurring_item['start_date']) ? $invoice_recurring_item['start_date'] : '',
